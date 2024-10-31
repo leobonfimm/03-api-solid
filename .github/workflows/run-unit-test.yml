@@ -1,4 +1,4 @@
-name: pnpm Example Workflow
+name: Run Unit Tests Action
 on:
   push:
 
@@ -21,3 +21,5 @@ jobs:
         cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
+    - name: Run Unit Tests
+      run: pnpm test
