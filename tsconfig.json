@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2021",
+
+    /* Modules */
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    }, 
+    
+    /* Emit */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    /* Type Checking */
+    "strict": true,
+    "types": ["vitest/globals"],
+    
+    /* Completeness */
+    "skipLibCheck": true
+  }
+}
