@@ -14,7 +14,7 @@ jobs:
         image: bitnami/postgresql
         ports:
           - 5432:5432
-        environment:
+        env:
           - POSTGRESQL_USERNAME=docker
           - POSTGRESQL_PASSWORD=docker
           - POSTGRESQL_DATABASE=apisolid
@@ -39,4 +39,4 @@ jobs:
       run: pnpm test:e2e
       env:
         JWT_SECRET: testing
-        DATABASE_URL: 
+        DATABASE_URL: "postgresql://docker:docker@localhost:5432/apisolid?schema=public"
