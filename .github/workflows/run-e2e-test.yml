@@ -34,6 +34,9 @@ jobs:
     - name: Install dependencies
       run: pnpm install
 
+    - name: Prisma Generate
+      run: pnpm exec prisma generate
+
     - name: Run E2E Tests
       run: pnpm test:e2e
       env:
